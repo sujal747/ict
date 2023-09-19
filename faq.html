@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/styles/styles.css" /> -->
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+  </head>
+  <body class="h-screen bg-blue-50">
+    <main class="p-5 bg-light-blue">
+      <div class="flex justify-center items-start my-2">
+        <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+          <h2 class="text-xl font-semibold text-vnet-blue mb-2">FAQ - Join, ICT, Etc.</h2>
+          <ul class="flex flex-col">
+            <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>What is the ICT Club of Kalika?</span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                x-ref="tab"
+                :style="handleToggle()"
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+              >
+                <p class="p-3 text-gray-900">
+                  The ICT Club of Kalika is a student organization dedicated to promoting and enhancing knowledge and skills in Information and Communication Technology (ICT) among Kalika School students.
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>How do I join the ICT Club?</span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                  To join the ICT Club, you can attend our club meetings, which are usually held on the hall of KMGSS Sector-2. You can also contact our club president or advisor for more information.
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>Is there a membership fee to join the ICT Club?</span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                  The ICT Club typically does not charge a membership fee. However, there may be nominal fees for specific events or workshops.
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>Who is the talented developer behind the creation of the ICT Club Kalika website?</span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                  The ICT Club Kalika website was expertly crafted by Dev.Sujal Gautam, whose exceptional skills and dedication have brought our online platform to life. Their remarkable work has greatly contributed to our digital presence.
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>How many programmers does it take to change a light bulb?</span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                  None. It's a hardware problem.
+                </p>
+              </div>
+            </li>
+            <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+              <h2
+                @click="handleClick()"
+                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+              >
+                <span>Can I showcase my ICT-related projects on the website?</span>
+                <svg
+                  :class="handleRotate()"
+                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                </svg>
+              </h2>
+              <div
+                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 text-gray-900">
+                  Absolutely! We encourage members to share their ICT-related projects and achievements on the website. It's a great way to inspire others and showcase your skills.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('accordion', {
+        tab: 0
+      });
+      
+      Alpine.data('accordion', (idx) => ({
+        init() {
+          this.idx = idx;
+        },
+        idx: -1,
+        handleClick() {
+          this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+        },
+        handleRotate() {
+          return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+        },
+        handleToggle() {
+          return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+        }
+      }));
+    })
+  </script>
+</html>
+</body>
+</html>
