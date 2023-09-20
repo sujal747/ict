@@ -988,13 +988,13 @@ main {
 }
 
 .footer {
-    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
+background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 .credits {
     
