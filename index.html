@@ -1,384 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ICT Club Kalika</title>
-<link rel="icon" href="images/logo.ico" type="image/x-icon">
-<!--- css file --->
-<link rel="stylesheet" href="css/style.css">
-<!--- script file --->
-<script src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICT Club Kalika</title>
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <!--- css file --->
+  <link rel="stylesheet" href="css/style.css">
+  <!--- script file --->
+  <script src="js/script.js"></script>
 
 </head>
+
 <body>
-<header>
-<nav>
-<div class="logo">
-	<a href="index.html"style="text-decoration:none"><span>ICT KMGSS</style></span></a>
-	</div>
-<ul class="nav-links">
-<li><a href="#">Home</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="team.html">Team</a></li>
-<li><a href="faq.html">FAQs</a></li>
-<li><a href="#landing_page">Contact</a></li>
-</ul>
-</nav>
-</header>
-<section class="header2">
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none"><span>ICT KMGSS</style></span></a>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger icon -->
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="#landing_page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="header2">
 
-<div class="text-box">
-<h1 class="heading-primary">
-<span class="heading-primary-main">ICT Club OF Kalika</span>
-<span class="heading-primary-sub">Sector-2</span>
-</h1>
-<a href="#" class="btn btn-white btn-animated">View More</a>
-</div>
-</section>
+    <div class="text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary-main">ICT Club OF Kalika</span>
+        <span class="heading-primary-sub">Sector-2</span>
+      </h1>
+      <a href="#" class="btn btn-white btn-animated">View More</a>
+    </div>
+  </section>
 
-<div class="container">
-<h1 id="gallery-heading">Gallery</h1>
-</div>
-
-<main>
-<div class="gallery">
-<div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-<img src="images/image1.jpg" alt="Image 1">
-</div>
-<div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-<img src="images/image2.jpg" alt="Image 2">
-</div>
-<div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-<img src="images/image3.jpg" alt="Image 3">
-</div>
-<div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-<img src="images/image4.jpg" alt="Image 4">
-</div>
-<div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-<img src="images/image5.jpg" alt="Image 5">
-</div>
-</div>
-<a href="gallery.html" class="next-gallery-button">More Content</a>
-</main>
-<div id="team"></div>
-<div class="responsive-container-block outer-container">
-<div class="responsive-container-block inner-container">
-<p class="text-blk section-head-text">
-Meet Our Expert Instructors
-</p>
-<p class="text-blk section-subhead-text">
-Team Members of ICT Club Kalika, Sector-2, Butwal
-</p>
-<div class="responsive-container-block">
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/krishnakafle.png">
-</div>
-<p class="text-blk name">
-Krishna Kafle
-</p>
-<p class="text-blk position">
-President
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/krishna.kafle.7731247" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="http://www.instagram.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/sujalgautam.png">
-</div>
-<p class="text-blk name">
-Sujal Gautam
-</p>
-<p class="text-blk position">
-Vice President
-</p>
-<div class="social-media-links">
-<a href="https://twitter.com/imsujal_747" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/sujal.gautam.747" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="https://www.instagram.com/im_sujal_747" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="https://www.gmail.com" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-
-</a>
-</div>
-</div>
-</div>
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/karunkc.jpg">
-</div>
-<p class="text-blk name">
-Karun KC
-</p>
-<p class="text-blk position">
-Secretary
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/karun.kc.581" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="http://www.instagram.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/parirana.jpg">
-</div>
-<p class="text-blk name">
-Pari Rana
-</p>
-<p class="text-blk position">
-Joint Secretary
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/profile.php?id=100051889900586" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="http://www.instagram.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/yesdeepgaire.jpg">
-</div>
-<p class="text-blk name">
-Yeshdeep Gaire
-</p>
-<p class="text-blk position">
-Treasurear
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/profile.php?id=100086402966328" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="http://www.instagram.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/sankaplaneupane.png">
-</div>
-<p class="text-blk name">
-Sankalpa Neupane
-</p>
-<p class="text-blk position">
-Joint Treasurear
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/profile.php?id=100089864266222" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="http://www.instagram.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-
-
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/rajbeepantha.jpg">
-</div>
-<p class="text-blk name">
-Rajbee Pantha
-</p>
-<p class="text-blk position">
-Director
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/profile.php?id=100071177125595" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="https://www.instagram.com/rraajbee" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-
-<div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-<div class="team-card">
-<div class="img-wrapper">
-<img class="team-img" src="images/bijaymarasini.jpg">
-</div>
-<p class="text-blk name">
-Bijay Marasini
-</p>
-<p class="text-blk position">
-Media Head
-</p>
-<div class="social-media-links">
-<a href="http://www.twitter.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-</a>
-<a href="https://www.facebook.com/bijay.marasini.773" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-</a>
-<a href="https://www.instagram.com/bijayyy_34" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-</a>
-<a href="http://www.gmail.com/" target="_blank">
-<img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<a href="team.html" class="next-gallery-button">View ALL Members</a>
-</div>
-
-	
-<!--CONTACT US OPEN-->
-	
-<div id="landing_page"></div>
-<div class="landing_page">
-<div class="responsive-container-block big-container">
-<img class="bg-img" id="iq5bf" src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-<div class="responsive-container-block container">
-<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
-<div class="content-box">
-<p class="text-blk section-head">
-ICT Club Kalika
-</p>
-<p class="text-blk section-subhead">
-ICT Club Kalika is a dynamic community where tech aficionados converge to explore, create, and make a meaningful impact through their passion for technology. Join us, and together we'll embark on a journey of innovation and collaboration, fueled by a shared love for all things tech.
-</p>
-<div class="icons-container">
-<a class="share-icon">
-<img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
-</a>
-<a class="share-icon">
-<img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
-</a>
-<a class="share-icon">
-<img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
-</a>
-<a class="share-icon">
-<img class="img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
-</a>
-</div>
-</div>
-</div>
-<div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
-<div class="container-block form-wrapper">
-<p class="text-blk contactus-head">
-<a class="link" href="">
-</a>
-Contact Us
-</p>
-<p class="text-blk contactus-subhead">
-We will get back to you in 24 hours
-</p>
-<div class="responsive-container-block">
-<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
-<form action="https://formsubmit.co/ictclubkalika@gmail.com" method="POST">
-<input class="input" id="ijowk-7" name="name" required placeholder="First Name">
-</div>
-<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i1ro7">
-<input class="input" id="indfi-5" name="name" required placeholder="Last Name">
-</div>
-<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
-<input class="input" id="ipmgh-7" name="email" required placeholder="Email">
-</div>
-<div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-<input class="input" id="imgis-6" name="phonenumber" required placeholder="Phone Number">
-</div>
-<div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
-<textarea aria-placeholder="Type message here" name="message" required class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
-</div>
-</div>
-<button type="submit" class="submit-btn">Send</button>
-</form>
-</form>	
-</div>
-</div>
-</div>
-</div>
-<!--CONTACT US END-->
-
-<div class="footer">
-<p>&copy; 2023 ICT Club Kalika. All rights reserved.</p>
-</div>
-<div class="credits">
-  Developed by <a href="https://sujal747.github.io/sujal" style="text-decoration:none; color:darkred">Sujal Gautam</a>
-</div>
+  <div class="container">
+    <h1 id="gallery-heading">Gallery</h1>
   </div>
-</footer>
-<!--FOOTER END-->
-<div class="preloader">
-<div class="loader"></div>
-</div>
+
+  <main>
+    <div class="gallery">
+      <div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <img src="images/image1.jpg" alt="Image 1">
+      </div>
+      <div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <img src="images/image2.jpg" alt="Image 2">
+      </div>
+      <div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <img src="images/image3.jpg" alt="Image 3">
+      </div>
+      <div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <img src="images/image4.jpg" alt="Image 4">
+      </div>
+      <div class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <img src="images/image5.jpg" alt="Image 5">
+      </div>
+    </div>
+    <a href="gallery.html" class="next-gallery-button">More Content</a>
+  </main>
+  <div id="team"></div>
+  <div class="responsive-container-block outer-container">
+    <div class="responsive-container-block inner-container">
+      <p class="text-blk section-head-text">
+        Meet Our Expert Instructors
+      </p>
+      <p class="text-blk section-subhead-text">
+        Team Members of ICT Club Kalika, Sector-2, Butwal
+      </p>
+      <div class="responsive-container-block">
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/krishnakafle.png">
+            </div>
+            <p class="text-blk name">
+              Krishna Kafle
+            </p>
+            <p class="text-blk position">
+              President
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/krishna.kafle.7731247" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/sujalgautam.png">
+            </div>
+            <p class="text-blk name">
+              Sujal Gautam
+            </p>
+            <p class="text-blk position">
+              Vice President
+            </p>
+            <div class="social-media-links">
+              <a href="https://twitter.com/imsujal_747" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/sujal.gautam.747" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="https://www.instagram.com/im_sujal_747" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="https://www.gmail.com" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/karunkc.jpg">
+            </div>
+            <p class="text-blk name">
+              Karun KC
+            </p>
+            <p class="text-blk position">
+              Secretary
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/karun.kc.581" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/parirana.jpg">
+            </div>
+            <p class="text-blk name">
+              Pari Rana
+            </p>
+            <p class="text-blk position">
+              Joint Secretary
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100051889900586" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/yesdeepgaire.jpg">
+            </div>
+            <p class="text-blk name">
+              Yeshdeep Gaire
+            </p>
+            <p class="text-blk position">
+              Treasurear
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100086402966328" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/sankaplaneupane.png">
+            </div>
+            <p class="text-blk name">
+              Sankalpa Neupane
+            </p>
+            <p class="text-blk position">
+              Joint Treasurear
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100089864266222" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/rajbeepantha.jpg">
+            </div>
+            <p class="text-blk name">
+              Rajbee Pantha
+            </p>
+            <p class="text-blk position">
+              Director
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100071177125595" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="https://www.instagram.com/rraajbee" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="images/bijaymarasini.jpg">
+            </div>
+            <p class="text-blk name">
+              Bijay Marasini
+            </p>
+            <p class="text-blk position">
+              Media Head
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="https://www.facebook.com/bijay.marasini.773" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="https://www.instagram.com/bijayyy_34" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="team.html" class="next-gallery-button">View ALL Members</a>
+  </div>
+
+
+  <!--CONTACT US OPEN-->
+
+  <div id="landing_page"></div>
+  <div class="landing_page">
+    <div class="responsive-container-block big-container">
+      <img class="bg-img" id="iq5bf"
+        src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      <div class="responsive-container-block container">
+        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
+          <div class="content-box">
+            <p class="text-blk section-head">
+              ICT Club Kalika
+            </p>
+            <p class="text-blk section-subhead">
+              ICT Club Kalika is a dynamic community where tech aficionados converge to explore, create, and make a
+              meaningful impact through their passion for technology. Join us, and together we'll embark on a journey of
+              innovation and collaboration, fueled by a shared love for all things tech.
+            </p>
+            <div class="icons-container">
+              <a class="share-icon">
+                <img class="img"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+              </a>
+              <a class="share-icon">
+                <img class="img"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+              </a>
+              <a class="share-icon">
+                <img class="img"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+              </a>
+              <a class="share-icon">
+                <img class="img"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
+          <div class="container-block form-wrapper">
+            <p class="text-blk contactus-head">
+              <a class="link" href="">
+              </a>
+              Contact Us
+            </p>
+            <p class="text-blk contactus-subhead">
+              We will get back to you in 24 hours
+            </p>
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
+                <form action="https://formsubmit.co/ictclubkalika@gmail.com" method="POST">
+                  <input class="input" id="ijowk-7" name="name" required placeholder="First Name">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i1ro7">
+                <input class="input" id="indfi-5" name="name" required placeholder="Last Name">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
+                <input class="input" id="ipmgh-7" name="email" required placeholder="Email">
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <input class="input" id="imgis-6" name="phonenumber" required placeholder="Phone Number">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
+                <textarea aria-placeholder="Type message here" name="message" required class="textinput" id="i5vyy-7"
+                  placeholder="Type message here"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+            </form>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CONTACT US END-->
+
+    <div class="footer">
+      <p>&copy; 2023 ICT Club Kalika. All rights reserved.</p>
+    </div>
+    <div class="credits">
+      Developed by <a href="https://sujal747.github.io/sujal" style="text-decoration:none; color:darkred">Sujal
+        Gautam</a>
+    </div>
+  </div>
+  </footer>
+  <!--FOOTER END-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
 
 </body>
+
 </html>

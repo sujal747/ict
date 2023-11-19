@@ -1,3 +1,7 @@
+function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector(".menu-toggle");
     const navigationMenu = document.querySelector(".header-navigation");
@@ -17,7 +21,7 @@ function zoomOut(element) {
     element.style.transform = 'scale(1)';
 }
 // Simulate a delay (you can replace this with actual content loading)
-setTimeout(function() {
+setTimeout(function () {
     document.querySelector('.preloader').style.display = 'none';
     // You can show your website content here
 }, 3000); // Adjust the time as needed
