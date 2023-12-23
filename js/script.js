@@ -25,4 +25,18 @@ function zoomOut(element) {
 setTimeout(function () {
     document.querySelector('.preloader').style.display = 'none';
     // You can show your website content here
-}, 3000); // Adjust the time as needed
+}, 2000); // Adjust the time as needed
+
+function toggleTheme() {
+    const body = document.body;
+
+    // Toggle dark theme class
+    body.classList.toggle("dark-theme");
+
+    // Toggle icon
+    const icon = document.getElementById("icon");
+    const isDarkTheme = body.classList.contains("dark-theme");
+
+    // Change the icon based on the theme
+    icon.src = isDarkTheme ? "ico/sun.png" : "ico/moon.png";
+}
