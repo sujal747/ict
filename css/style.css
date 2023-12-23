@@ -10,20 +10,30 @@ html {
 	box-sizing: border-box;
 }
 
+.dark-theme {
+	--primary-color: #000106;
+	--secondary-color: #fff;
+}
+
+
+
 /* Global Styles */
 body {
 	font-family: Arial, sans-serif;
+	--primary-color: #edf2fc;
+	--secondary-color: #212121;
+	transition: background-color 0.5s, color 0.5s;
 }
 
 /* Header */
 header {
-	background-color: white;
-	color: rgb(0, 0, 0);
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 	padding: 10px 0;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: var(--secondary-color);
 }
 
 nav {
@@ -37,22 +47,25 @@ nav {
 .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #0011ff;
+
+}
+
+.logo span {
+	color: var(--secondary-color);
 }
 
 .nav-links {
 	list-style: none;
 	display: flex;
+	text-align: right;
 }
 
-.nav-links li {
-	margin-right: 20px;
-}
+
 
 .nav-links a {
 	display: block;
 	padding: 15px;
-	color: rgb(0, 0, 0);
+	color: var(--secondary-color);
 	text-decoration: none;
 	border-bottom: 1px solid #ddd;
 	border-radius: 8px;
@@ -63,18 +76,24 @@ nav {
 .nav-links a:hover {
 	background-color: #4400ff;
 	border-radius: 4px;
-	color: white;
+	color: var(--primary-color);
+}
+
+#icon {
+	width: 30px;
+	cursor: pointer;
+
 }
 
 /* Sticky header */
 header {
-	background-color: white;
-	color: rgb(0, 0, 0);
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 	padding: 10px 0;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: var(--secondary-color);
 }
 
 nav {
@@ -101,7 +120,7 @@ nav {
 }
 
 .nav-links a {
-	color: rgb(0, 0, 0);
+	color: var(--secondary-color);
 	padding: 10px;
 	font-weight: bold;
 	text-decoration: none;
@@ -110,7 +129,7 @@ nav {
 .nav-links a:hover {
 	background-color: #1100ff;
 	border-radius: 4px;
-	color: white;
+	color: var(--primary-color);
 }
 
 @media screen and (max-width: 625px) {
@@ -122,8 +141,8 @@ nav {
 		/* Adjust this value as needed */
 		left: 0;
 		width: 100%;
-		background-color: white;
-		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		background-color: var(--primary-color);
+		box-shadow: 0 2px 2px var(--secondary-color);
 		border-radius: 10px;
 		/* Add border radius for a rounded look */
 		animation: slideIn 0.3s ease-out;
@@ -148,6 +167,7 @@ nav {
 
 	.hamburger-menu {
 		display: block;
+		order: -1;
 	}
 }
 
@@ -175,7 +195,7 @@ nav {
 
 body {
 	font-family: "DM Sans", sans-serif;
-	background-color: #f2f5f7;
+	background-color: var(--primary-color);
 	line-height: 1.5;
 	min-height: 300vh;
 	position: relative;
@@ -200,7 +220,7 @@ body2 {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.7;
-	color: #eee;
+	color: var(--primary-color);
 }
 
 .header2 {
@@ -227,7 +247,7 @@ body2 {
 .brand {
 	font-size: 25px;
 	font-family: 'Sriracha', cursive;
-	color: #000;
+	color: var(--secondary-color);
 	text-decoration: none;
 	margin-left: 30px;
 	position: sticky;
@@ -243,7 +263,7 @@ body2 {
 }
 
 .heading-primary {
-	color: #fff;
+	color: var(--primary-color);
 	text-transform: uppercase;
 
 	backface-visibility: hidden;
@@ -277,16 +297,16 @@ body2 {
 
 .btn:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: var(--secondary-color);
 }
 
 .btn:active {
 	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px var(--secondary-color);
 }
 
 .btn-white {
-	background-color: #fff;
+	background-color: var(--primary-color);
 	color: #777;
 	font-size: 14px;
 }
@@ -355,7 +375,7 @@ main {
 	display: inline-block;
 	padding: 10px 20px;
 	background-color: #0099cc;
-	color: white;
+	color: var(--primary-color);
 	text-decoration: none;
 	margin-top: 20px;
 	border-radius: 5px;
@@ -424,7 +444,7 @@ main {
 	padding-right: 50px;
 	padding-bottom: 10px;
 	padding-left: 50px;
-	background-color: rgb(244, 252, 255);
+	background-color: var(--primary-color);
 }
 
 .inner-container {
@@ -564,8 +584,8 @@ main {
 }
 
 .landing_page .form-box {
-	background-color: #151617;
-	color: white;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
 	padding-top: 35px;
 	padding-right: 33px;
 	padding-bottom: 35px;
@@ -580,7 +600,7 @@ main {
 }
 
 .landing_page .text-blk.contactus-subhead {
-	color: #d4d4d4;
+	color: #ffffff;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 18px;
@@ -662,7 +682,7 @@ main {
 	background-color: #4400ff;
 	font-size: 18px;
 	font-weight: 600;
-	color: white;
+	color: var(--primary-color);
 	border-top-width: 2px;
 	border-right-width: 2px;
 	border-bottom-width: 2px;
@@ -698,7 +718,7 @@ main {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	color: white;
+	color: var(--primary-color);
 }
 
 .landing_page .text-blk.section-subhead {
@@ -734,7 +754,7 @@ main {
 }
 
 .landing_page .responsive-container-block.big-container {
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(37, 35, 35);
 	padding-top: 0px;
 	padding-right: 50px;
 	padding-bottom: 0px;
@@ -1047,7 +1067,7 @@ body {
 .loader {
 	width: 50px;
 	height: 50px;
-	border: 5px solid #fff;
+	border: 5px solid var(--primary-color);
 	border-top: 5px solid #3498db;
 	border-radius: 50%;
 	animation: spin 2s linear infinite;
@@ -1064,7 +1084,7 @@ body {
 }
 
 .footer {
-	color: #fff;
+	color: var(--primary-color);
 	text-align: center;
 	padding: 10px;
 	position: absolute;
@@ -1077,10 +1097,13 @@ body {
 	padding: 10px;
 	position: absolute;
 	width: 100%;
+	color: var(--secondary-color);
 }
 
 
-
+.footer p {
+	color: white;
+}
 
 
 
@@ -1109,7 +1132,7 @@ body {
 
 .socials .ico-circle:hover {
 	background-color: #0078ff;
-	color: #fff;
+	color: var(--primary-color);
 	box-shadow: 0 0 0 3px #cde1f8;
 	transition: all 500ms ease;
 }
